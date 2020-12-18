@@ -10,7 +10,7 @@ jobs:
 
   build:
     name: Build
-    runs-on: [ ubuntu-latest , macos]
+    runs-on: [ ubuntu-latest , macOS-latest]
     steps:
 
     - name: Set up Go 1.x
@@ -32,5 +32,3 @@ jobs:
     - name: Build
       run: go build -v ./...
 
-    - name: Test
-      run: go test -v ./...
